@@ -1,0 +1,124 @@
+#projects{
+  margin: 0px auto;
+padding: 100px 0px;
+max-width: 1000px;
+}
+
+.project-heading{
+  display: flex;
+-webkit-box-align: center;
+align-items: center;
+position: relative;
+margin: 10px 0px 40px;
+width: 100%;
+font-size: clamp(26px,5vw,32px);
+white-space: nowrap;
+}
+.project-heading h2{
+  margin: 0px 0px 10px;
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
+.project-lear{
+  display: grid;
+gap: 10px;
+grid-template-columns: repeat(12, 1fr);
+-webkit-box-align: center;
+align-items: center;
+
+}
+
+.project-content{
+  grid-column: 7 / -1;
+    text-align: right;
+
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+}
+.project-overline{
+
+  margin: 10px 0px;
+color: #64ffda;
+font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+font-size: 13px;
+font-weight: 400;
+}
+
+.project-title{
+  color: #ccd6f6;
+    font-size: clamp(24px, 5vw, 28px);
+  }
+
+  .project-title h3{
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+    font-size: 1.17em;
+
+}
+
+.project-description{
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color:  #172a45;
+    color:  #a8b2d1;
+    font-size: 18px;
+  }
+.project-description  p {
+    margin: 0px 0px 15px;
+}
+
+.project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+}
+.project-tech-list li {
+    margin: 0px 20px 5px 0px;
+    color:  #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 13px;
+    white-space: nowrap;
+    display: list-item;
+text-align: -webkit-match-parent;
+}
+.deOCLC:nth-of-type(2n+1).project-links {
+   -webkit-box-pack: end;
+   justify-content: flex-end;
+   margin-left: 0px;
+   margin-right: -10px;}
+
+.eOCLC .project-links {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -10px;
+    color:  #a8b2d1;
+}
+
+.project-image {
+  grid-column: 1 / 8;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
+}
+
+img{
+  border-radius: 4px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+}
