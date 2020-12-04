@@ -241,49 +241,6 @@ margin-top: 50px;
 
 }
 
-@media(max-width:827px){
-    .container{
-        flex-direction: column;
-
-    }
-    .seactionB img{
-       margin-left: 30%;
-       margin-top: 25px;
-    }
-    .header-text{
-        text-align: center;
-
-        font-size: 30px;
-    }
-
-    .header-text h1{
-       margin-bottom: 20px;
-    }
-
-    .navbar{
-        font-size: 30px;
-
-    }
-    .btn{
-      margin-left: 25%;
-
-    }
-
-    .btn button{
-
-
-    }
-    .home{
-        top: 8%;
-    }
-    .about-seaction{
-
-        display:flex;
-    margin-top: 20%;
-
-    }
-}
-
 @media (max-width: 1252px) {
   .header-img{
       display: none;
@@ -335,6 +292,7 @@ margin-top: 50px;
   }
 
 }
+
 @media (max-width: 950px) {
   .title-container h1 {
     display: none;
@@ -342,6 +300,9 @@ margin-top: 50px;
   .links span {
     display: none;
   }
+  .title-container {
+   padding: 20px;
+ }
   #sidebar {
     width: 75px;
   }
@@ -362,6 +323,52 @@ margin-top: 50px;
 }
 
 }
+
+@media(max-width:827px){
+    .container{
+        flex-direction: column;
+
+    }
+    .seactionB img{
+       margin-left: 30%;
+       margin-top: 25px;
+    }
+    .header-text{
+        text-align: center;
+
+        font-size: 30px;
+    }
+
+    .header-text h1{
+       margin-bottom: 20px;
+    }
+
+    .navbar{
+        font-size: 30px;
+
+    }
+    .btn{
+      margin-left: 25%;
+
+    }
+
+    .btn button{
+
+
+    }
+    .home{
+        top: 8%;
+    }
+    .about-seaction{
+
+        display:flex;
+    margin-top: 20%;
+
+    }
+}
+
+
+
 @media (max-width:778px) {
   .header-text-4{
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
@@ -376,6 +383,13 @@ margin-top: 50px;
   }
 }
 
+
+@media (max-width:600px) {
+  .header-icon{
+    display: none;
+  }
+
+}
 .title-for-all-header {
     font-weight: 400;
  margin: 0px 0px 30px 4px;
