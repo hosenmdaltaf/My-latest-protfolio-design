@@ -17,7 +17,7 @@ body {
   color: #8892b0;
   width: 200px;
   height: 100%;
-  max-height: auto;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -381,15 +381,11 @@ margin-top: 50px;
    width: 20px;
    height: 20px;
   }
-}
-
-
-@media (max-width:600px) {
-  .header-icon{
-    display: none;
+  .title-for-all-header {
+      font-size: 35px;
   }
-
 }
+
 .title-for-all-header {
     font-weight: 400;
  margin: 0px 0px 30px 4px;
@@ -401,8 +397,27 @@ margin-top: 50px;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
+@media (max-width:600px) {
+  .header-icon{
+    display: none;
+  }
+  .title-for-all-header {
+      font-size: 28px;
+  }
 
+}
+@media (max-width:450px) {
 
+  .btn{
+
+      margin-left: 9%;
+
+    }
+    .title-for-all-header {
+        font-size: 20px;
+    }
+
+  }
 /*About.....................................................................................................................Section*/
 
 .about-seaction{
@@ -424,25 +439,7 @@ margin-bottom: 50px;
 
      margin-top: 10%;
 }
-.skill-list ul{
-  display:flex;
-list-style: none;
-justify-content: space-between;
 
-
-}
-.skill-list ul li{
-  position: relative;
-
-margin-bottom: 10px;
-font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-font-size: 13px;
-
-
-}
-.skill-list ul li i{
-color:  #64ffda;
-}
 .right-side-li li{
 
 }
@@ -488,6 +485,25 @@ margin: 20px 0px 0px;
 overflow: hidden;
 list-style: none;
 }
+.skill-list ul{
+  display:flex;
+list-style: none;
+justify-content: space-between;
+
+
+}
+.skill-list ul li{
+  position: relative;
+
+margin-bottom: 10px;
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+font-size: 13px;
+
+
+}
+.skill-list ul li i{
+color:  #64ffda;
+}
 
 @media (max-width:1162px) {
   .about-img{
@@ -529,11 +545,20 @@ list-style: none;
   height: auto;
 }
 }
-@media (max-width:778px) {
+@media (max-width:600px) {
+  .detils{
+      padding: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
   .detils p{
         font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-        font-size: 18px;
+        font-size: 10px;
+  }
+  .skill-list ul li{
 
+font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-size: 10px;
 
 
   }
@@ -945,7 +970,7 @@ margin-top: 50px;
 
 /*contact...................................................................................................................--------..Section*/
 
-.section {
+.contact-section {
     padding: 100px 0;
     position: relative;
 }
@@ -1113,6 +1138,7 @@ padding: 15px;
 text-align: center;
 
 }
+
 .footer-name:hover{
   color:#64ffda;
 }
